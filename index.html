@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 AI Image Prompt Generator</h1>
+        <p class="subtitle">Turn simple descriptions into detailed prompts for Midjourney, Stable Diffusion, DALL-E</p>
+
+        <div class="input-section">
+            <label for="description">What do you want to see?</label>
+            <input type="text" id="description" placeholder="a cat sitting on a chair" autofocus>
+
+            <div class="options-row">
+                <div class="option-group">
+                    <label>Style</label>
+                    <select id="style">
+                        <option value="photorealistic">📷 Photorealistic</option>
+                        <option value="oil-painting">🖼️ Oil Painting</option>
+                        <option value="watercolour">🎨 Watercolour</option>
+                        <option value="pixel-art">👾 Pixel Art</option>
+                        <option value="anime">✨ Anime</option>
+                        <option value="3d-render">🧊 3D Render</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label>Mood</label>
+                    <select id="mood">
+                        <option value="warm">☀️ Warm</option>
+                        <option value="cool">❄️ Cool</option>
+                        <option value="dramatic">🎭 Dramatic</option>
+                        <option value="peaceful">🕊️ Peaceful</option>
+                        <option value="dark">🌑 Dark</option>
+                        <option value="vibrant">🌈 Vibrant</option>
+                    </select>
+                </div>
+            </div>
+
+            <button onclick="generate()" class="btn-generate">✨ Generate Prompts</button>
+        </div>
+
+        <div id="results" class="results"></div>
+    </div>
+
+    <footer>
+        Built by <a href="https://www.handonweb.com">Hand On Web</a> · Chester, UK
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
